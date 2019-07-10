@@ -69,5 +69,7 @@ class TicTacToe
       @board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["X", "X", "X"]  || @board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["O", "O", "O"]
     end
   end
+  
+  
  
 end
