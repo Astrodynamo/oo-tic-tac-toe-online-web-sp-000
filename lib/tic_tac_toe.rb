@@ -70,6 +70,8 @@ class TicTacToe
     end
   end
   
-  
+  def full?
+    !@board.find {|position| position == " "}
+  end
  
 end
