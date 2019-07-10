@@ -64,9 +64,9 @@ class TicTacToe
   end
   
   #Endgame methods
-  def won? (board)
+  def won?
     WIN_COMBINATIONS.detect do |win_combination|
-      board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["X", "X", "X"]  || board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["O", "O", "O"]
+      @board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["X", "X", "X"]  || board.values_at(win_combination[0], win_combination[1], win_combination[2]) == ["O", "O", "O"]
     end
   end
  
