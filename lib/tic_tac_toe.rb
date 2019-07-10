@@ -87,5 +87,14 @@ class TicTacToe
   def winner
     return @board[won?[1]] if won?
   end
+  
+  def play
+    turn until over?
+    if won?
+      puts "Congratulations #{winner(board)}!"
+    else 
+      puts "Cat's Game!"
+    end
+  end
  
 end
