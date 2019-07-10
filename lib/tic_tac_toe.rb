@@ -73,5 +73,10 @@ class TicTacToe
   def full?
     !@board.find {|position| position == " "}
   end
+  
+  def draw?
+    return true if !won? && full?
+    false
+  end
  
 end
